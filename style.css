@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background-color: #5BC3D5;
+    transition: .5s ease;
+}
+
+body.dark {
+    background-color: #111821;
+}
+
+.container {
+    margin: 20px auto;
+    height: auto;
+    width: 80%;
+    padding: 70px;
+    background-color: #fafafa;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+    transition: .5s ease;
+}
+
+body.dark .container {
+    background-color: #151E29
+}
+
+.container .title-main {
+    font-weight: 400;
+    transition: .5s ease;
+}
+
+body.dark .title-main {
+    color: #fff;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, black, transparent);
+    transition: .5s ease;
+}
+
+body.dark .line {
+    background: linear-gradient(to right, white, transparent);
+}
+
+.flex-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+.data {
+    display: flex;
+    margin-top: 15px;
+}
+
+.data p {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: .9rem;
+    transition: .5s ease;
+}
+
+.author {
+    display: flex;
+    margin-top: 10px;
+}
+
+.author p {
+    margin-left: 10px;
+    margin-top: 9px;
+    transition: .5s ease;
+}
+
+body.dark .author p, body.dark .data p {
+    color: #fff;
+    color:#a3a3a3
+}
+
+.main-text {
+    margin-top: 50px;
+    text-align: justify;
+    color: #4f4f4f;
+    line-height: 25px;
+    transition: .5s ease;
+}
+
+body.dark .main-text {
+    color: rgba(255,255,255,0.7);
+}
+
+.align-button {
+    position: fixed;
+    right: 1%;
+    top: 90%;
+}
+
+.button {
+    cursor: pointer;
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    margin-top: 5px;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255, 0.5);
+    border-radius: 25px;
+}
+
+.button > span {
+    position: relative;
+    display: inline-block;
+    left: 0%;
+    transform: translateX(0%);
+    height: 21px;
+    width: 35px;
+    border-radius: 35px;
+    background: rgba(255,255,255, 0.5);
+    transition: 0.5s ease;
+}
+
+.main-text img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+hr {
+    opacity: .3;
+}
+
+@media screen and (max-width: 1100px) {
+    .align-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .flex-info {
+        display: block;
+    }
+}
