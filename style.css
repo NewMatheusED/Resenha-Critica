@@ -75,6 +75,7 @@ body.dark .line {
 .author {
     display: flex;
     margin-top: 10px;
+    margin-left: -5px;
 }
 
 .author p {
@@ -153,5 +154,10 @@ hr {
 @media screen and (max-width: 780px) {
     .flex-info {
         display: block;
+    }
+
+    .container {
+        padding: 20px;
+        width: 90%;
     }
 }
